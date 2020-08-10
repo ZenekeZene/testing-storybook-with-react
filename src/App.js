@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './lib/redux';
+import InboxScreen from './components/InboxScreen';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Provider store={store}>
+      <InboxScreen />
+    </Provider>
   );
 }
 
